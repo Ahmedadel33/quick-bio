@@ -209,6 +209,55 @@ export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
       note: "Node.js, TypeScript, PostgreSQL, Redis, Terraform & Dual AWS Certified",
     },
   },
+  devops: {
+    pageTitle: "Ahmed Adel ELtantawy | DevOps Engineer",
+    role: "DevOps Engineer | AWS, Docker & CI/CD",
+    locationLine: "Cairo, Egypt",
+    bio: "Deploying, securing, and maintaining applications on Linux and AWS.",
+    fellowshipBadge: "AWS Certified Cloud Practitioner",
+    skills: [
+      { label: "GitHub Actions" },
+      { label: "Docker" },
+      { label: "Kubernetes" },
+      { label: "AWS", highlighted: true },
+      { label: "Linux" },
+    ],
+    metrics: [
+      { value: "AWS CCP", label: "Cloud Practitioner" },
+      { value: "CI/CD", label: "GitHub Actions" },
+    ],
+    currentRole: {
+      title: "Freelance Full Stack / DevOps-Oriented Developer",
+      summary:
+        "Deploying and maintaining production apps on Linux, configuring Nginx and PM2, building GitHub Actions CI/CD workflows, and managing AWS resources.",
+    },
+    links: [
+      {
+        id: "resume",
+        title: "My Resume (CV)",
+        subtitle: "DevOps Engineer CV • PDF",
+        href: "/cv/Ahmed_Adel_Tantawi_DevOps.pdf",
+        downloadName: "Ahmed_Adel_Tantawi_DevOps.pdf",
+      },
+      {
+        id: "linkedin",
+        title: "LinkedIn Profile",
+        subtitle: "Connect & network",
+        href: "https://www.linkedin.com/in/ahmed-adel-5199972b9",
+      },
+      {
+        id: "portfolio",
+        title: "DevOps Project",
+        subtitle: "GitHub Actions & CI/CD",
+        href: "https://github.com/Ahmedadel33/git-cicd",
+      },
+    ],
+    vcard: {
+      ...BASE_VCARD,
+      title: "DevOps Engineer | Freelance Full Stack Developer",
+      note: "AWS, Docker, Kubernetes, Linux, Nginx & GitHub Actions",
+    },
+  },
   frontend: {
     pageTitle: "Ahmed Adel ELtantawy | Front-End Engineer",
     role: "Front-End Engineer | React, Next.js & TypeScript",

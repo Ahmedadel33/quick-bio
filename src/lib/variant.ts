@@ -1,4 +1,9 @@
-export type ProfileVariantKey = "fullstack" | "backend" | "frontend" | "software";
+export type ProfileVariantKey =
+  | "fullstack"
+  | "backend"
+  | "devops"
+  | "frontend"
+  | "software";
 
 /**
  * Opaque URL codes mapped to profile variants so the role name
@@ -7,6 +12,7 @@ export type ProfileVariantKey = "fullstack" | "backend" | "frontend" | "software
 const CODE_TO_VARIANT: Record<string, ProfileVariantKey> = {
   f8m2: "fullstack",
   b4x9: "backend",
+  d9v4: "devops",
   e7k3: "frontend",
   s2q6: "software",
 };
