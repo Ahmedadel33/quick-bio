@@ -13,7 +13,6 @@ import {
   MapPin,
   MessageCircle,
   Star,
-  User,
 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
@@ -62,8 +61,6 @@ function ActionIcon({ id }: { id: ActionLinkItem["id"] }) {
   const icon =
     id === "resume" ? (
       <FileText {...iconProps} />
-    ) : id === "about" ? (
-      <User {...iconProps} />
     ) : (
       <Code2 {...iconProps} />
     );
@@ -123,10 +120,10 @@ export function App() {
           </div>
 
           {/* Top Hero Banner with Image, Status & Location */}
-          <div className="relative h-36 w-full shrink-0 overflow-hidden rounded-2xl bg-[#132444] shadow-sm sm:h-40 md:h-48">
+          <div className="relative h-36 w-full shrink-0 overflow-hidden rounded-2xl bg-white shadow-sm sm:h-40 md:h-48">
             <img
               alt={SHARED_PROFILE.name}
-              className="h-full w-full object-cover object-[50%_38%]"
+              className="h-full w-full origin-top scale-125 object-contain object-center"
               src={SHARED_PROFILE.heroImage}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/15 to-transparent" />
@@ -175,7 +172,7 @@ export function App() {
         <div className="flex flex-1 flex-col gap-2.5">
           {/* 3-Column Proof Strip */}
           <section
-            className="grid shrink-0 grid-cols-3 divide-x divide-slate-200/70 rounded-xl border border-slate-200/80 bg-gradient-to-b from-white to-slate-50/70 shadow-subtle"
+            className="grid shrink-0 grid-cols-2 divide-x divide-slate-200/70 rounded-xl border border-slate-200/80 bg-gradient-to-b from-white to-slate-50/70 shadow-subtle"
             data-purpose="proof-metrics"
           >
             {profile.metrics.map((metric, index) => (
@@ -304,8 +301,8 @@ export function App() {
                 <a
                   key={contact.id}
                   href={contact.href}
-                  target={contact.id === "email" ? undefined : "_blank"}
-                  rel={contact.id === "email" ? undefined : "noopener noreferrer"}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={contact.label}
                   title={contact.label}
                   className="tap-effect flex h-9 items-center justify-center rounded-xl border border-slate-200/80 bg-slate-50/60 text-slate-600 shadow-subtle transition-colors hover:bg-slate-100 hover:text-slate-900"

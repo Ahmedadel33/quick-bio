@@ -23,7 +23,7 @@ export interface CurrentRoleHighlight {
 }
 
 export interface ActionLinkItem {
-  id: "resume" | "linkedin" | "about" | "portfolio";
+  id: "resume" | "linkedin" | "portfolio";
   title: string;
   subtitle: string;
   href: string;
@@ -50,9 +50,9 @@ export interface ProfileVariant {
 }
 
 export const SHARED_PROFILE = {
-  name: "Abdelrahman Mahmoud",
+  name: "Ahmed Adel ELtantawy",
   availabilityText: "Available for opportunities",
-  heroImage: "/me.png",
+  heroImage: "/profile-photo.jfif",
   accreditationFooter: "DiGiLiANS • MCIT • Military Academy • NTI",
   institutions: [
     {
@@ -80,39 +80,39 @@ export const SHARED_PROFILE = {
     {
       id: "github",
       label: "GitHub",
-      href: "https://github.com/Abdelrahman-Mahmoud-Elsaeed",
+      href: "https://github.com/Ahmedadel33",
     },
     {
       id: "whatsapp",
       label: "WhatsApp",
-      href: "https://wa.me/201095160726",
+      href: "https://wa.me/201065013789",
     },
     {
       id: "email",
       label: "Email",
-      href: "mailto:abdelrahman.mahmoud.elsaeed@gmail.com",
+      href: "https://mail.google.com/mail/?view=cm&fs=1&to=ahmed.a.tantawi%40gmail.com",
     },
     {
       id: "website",
       label: "Personal Website",
-      href: "https://abdelrahmanmahmoud.vercel.app/",
+      href: "https://website-porto-beta.vercel.app/",
     },
   ] satisfies QuickContactItem[],
 } as const;
 
 const BASE_VCARD = {
-  fullName: "Abdelrahman Mahmoud",
+  fullName: "Ahmed Adel ELtantawy",
   organization: "MCIT • Digilians Initiative",
-  phone: "+201095160726",
-  email: "abdelrahman.mahmoud.elsaeed@gmail.com",
-  url: "https://abdelrahmanmahmoud.vercel.app",
+  phone: "+201065013789",
+  email: "ahmed.a.tantawi@gmail.com",
+  url: "https://website-porto-beta.vercel.app",
   address: ";;Cairo;Egypt;;;",
-  fileName: "Abdelrahman-Mahmoud.vcf",
+  fileName: "Ahmed-Adel-ELtantawy.vcf",
 };
 
 export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
   fullstack: {
-    pageTitle: "Abdelrahman Mahmoud | Full-Stack Developer",
+    pageTitle: "Ahmed Adel ELtantawy | Full-Stack Developer",
     role: "Full-Stack Developer | Node.js, React & AWS",
     locationLine: "Cairo, Egypt",
     bio: "Building resilient Node.js backends & modern React apps.",
@@ -127,10 +127,9 @@ export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
     metrics: [
       { value: "Dual AWS", label: "DVA & CLF" },
       { value: "47+ Routes", label: "Multi-Tenant API" },
-      { value: "5.0 ★", label: "Upwork Rating" },
     ],
     currentRole: {
-      title: "Full-Stack Engineer Intern @ MCIT",
+      title: "Full-Stack Engineer Intern @ Darwish & co",
       summary:
         "Designing a Node.js and React processing engine to validate digitization/OCR deliveries, detect file-structure and metadata inconsistencies, and standardize inputs.",
     },
@@ -146,29 +145,23 @@ export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
         id: "linkedin",
         title: "LinkedIn Profile",
         subtitle: "Connect & network",
-        href: "https://www.linkedin.com/in/abdelrahman-mahmoud-akl/",
-      },
-      {
-        id: "about",
-        title: "About Me",
-        subtitle: "Career journey & background",
-        href: "https://abdelrahmanmahmoud.vercel.app/portfolio/about",
+        href: "https://www.linkedin.com/in/ahmed-adel-5199972b9",
       },
       {
         id: "portfolio",
         title: "Portfolio & Projects",
         subtitle: "NEXUS-CRM, MediMind & more",
-        href: "https://abdelrahmanmahmoud.vercel.app/portfolio/projects",
+        href: "https://website-porto-beta.vercel.app/portfolio/projects",
       },
     ],
     vcard: {
       ...BASE_VCARD,
-      title: "Full-Stack Developer | Software Engineer Intern @ MCIT",
+      title: "Full-Stack Developer | Software Engineer Intern @ Darwish & co",
       note: "Dual AWS Certified (DVA-C02 & CLF-C02) • Node.js, React & Cloud",
     },
   },
   backend: {
-    pageTitle: "Abdelrahman Mahmoud | Backend & Cloud Engineer",
+    pageTitle: "Ahmed Adel ELtantawy | Backend & Cloud Engineer",
     role: "Backend & Cloud Engineer | Node.js & AWS",
     locationLine: "Cairo, Egypt",
     bio: "Multi-tenant APIs, Redis caching, RBAC & AWS ECS systems.",
@@ -183,10 +176,9 @@ export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
     metrics: [
       { value: "47+ Routes", label: "NEXUS-CRM API" },
       { value: "Dual AWS", label: "DVA & CLF" },
-      { value: "5.0 ★", label: "Upwork Rating" },
     ],
     currentRole: {
-      title: "Backend Engineer Intern @ MCIT",
+      title: "Backend Engineer Intern @ Darwish & co",
       summary:
         "Building a Node.js processing engine to validate digitization/OCR deliveries, detect file-structure and metadata inconsistencies, and prepare standardized pipeline inputs.",
     },
@@ -202,29 +194,23 @@ export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
         id: "linkedin",
         title: "LinkedIn Profile",
         subtitle: "Connect & network",
-        href: "https://www.linkedin.com/in/abdelrahman-mahmoud-akl/",
-      },
-      {
-        id: "about",
-        title: "About Me",
-        subtitle: "Architecture & career journey",
-        href: "https://abdelrahmanmahmoud.vercel.app/portfolio/about",
+        href: "https://www.linkedin.com/in/ahmed-adel-5199972b9",
       },
       {
         id: "portfolio",
         title: "Backend Case Studies",
         subtitle: "NEXUS-CRM (47+ routes) & MediMind",
-        href: "https://abdelrahmanmahmoud.vercel.app/portfolio/projects/nexus-crm",
+        href: "https://website-porto-beta.vercel.app/portfolio/projects/nexus-crm",
       },
     ],
     vcard: {
       ...BASE_VCARD,
-      title: "Backend & Cloud Engineer | Software Engineer Intern @ MCIT",
+      title: "Backend & Cloud Engineer | Software Engineer Intern @ Darwish & co",
       note: "Node.js, TypeScript, PostgreSQL, Redis, Terraform & Dual AWS Certified",
     },
   },
   frontend: {
-    pageTitle: "Abdelrahman Mahmoud | Front-End Engineer",
+    pageTitle: "Ahmed Adel ELtantawy | Front-End Engineer",
     role: "Front-End Engineer | React, Next.js & TypeScript",
     locationLine: "Cairo, Egypt",
     bio: "Fast, accessible React 19, Next.js PWAs & design systems.",
@@ -239,10 +225,9 @@ export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
     metrics: [
       { value: "React 19", label: "& Next.js PWA" },
       { value: "Meta Cert", label: "Front-End" },
-      { value: "5.0 ★", label: "Upwork Rating" },
     ],
     currentRole: {
-      title: "Front-End Engineer Intern @ MCIT",
+      title: "Front-End Engineer Intern @ Darwish & co",
       summary:
         "Designing a React & Node.js interface and processing engine to inspect digitization/OCR deliveries, surface metadata inconsistencies, and standardize outputs.",
     },
@@ -252,35 +237,29 @@ export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
         title: "My Resume (CV)",
         subtitle: "Front-End CV • PDF",
         href: "/cv/frontend-cv.pdf",
-        downloadName: "Abdelrahman Mahmoud - Frontend Developer.pdf",
+        downloadName: "Ahmed Adel ELtantawy - Frontend Developer.pdf",
       },
       {
         id: "linkedin",
         title: "LinkedIn Profile",
         subtitle: "Connect & network",
-        href: "https://www.linkedin.com/in/abdelrahman-mahmoud-akl/",
-      },
-      {
-        id: "about",
-        title: "About Me",
-        subtitle: "Career journey & background",
-        href: "https://abdelrahmanmahmoud.vercel.app/portfolio/about",
+        href: "https://www.linkedin.com/in/ahmed-adel-5199972b9",
       },
       {
         id: "portfolio",
         title: "UI & Web Projects",
-        subtitle: "React, Next.js PWA & Angular",
-        href: "https://abdelrahmanmahmoud.vercel.app/portfolio/projects",
+        subtitle: "React & Next.js PWA",
+        href: "https://github.com/Ahmedadel33",
       },
     ],
     vcard: {
       ...BASE_VCARD,
-      title: "Front-End Engineer | Software Engineer Intern @ MCIT",
+      title: "Front-End Engineer | Software Engineer Intern @ Darwish & co",
       note: "React 19, Next.js, TypeScript, Tailwind CSS & Meta Front-End Certified",
     },
   },
   software: {
-    pageTitle: "Abdelrahman Mahmoud | Software Engineer",
+    pageTitle: "Ahmed Adel ELtantawy | Software Engineer",
     role: "Software Engineer | Systems & Cloud",
     locationLine: "Cairo, Egypt",
     bio: "Building multi-tenant SaaS backends, React apps & AWS cloud.",
@@ -295,10 +274,9 @@ export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
     metrics: [
       { value: "47+ Routes", label: "Multi-Tenant SaaS" },
       { value: "Dual AWS", label: "DVA & CLF" },
-      { value: "5.0 ★", label: "Upwork Rating" },
     ],
     currentRole: {
-      title: "Software Engineer Intern @ MCIT",
+      title: "Software Engineer Intern @ Darwish & co",
       summary:
         "Working on the design of a Node.js and React processing engine to validate digitization/OCR deliveries, detect file-structure and metadata inconsistencies, and prepare standardized inputs.",
     },
@@ -314,24 +292,18 @@ export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
         id: "linkedin",
         title: "LinkedIn Profile",
         subtitle: "Connect & network",
-        href: "https://www.linkedin.com/in/abdelrahman-mahmoud-akl/",
-      },
-      {
-        id: "about",
-        title: "About Me",
-        subtitle: "Engineering journey",
-        href: "https://abdelrahmanmahmoud.vercel.app/portfolio/about",
+        href: "https://www.linkedin.com/in/ahmed-adel-5199972b9",
       },
       {
         id: "portfolio",
         title: "Systems & Projects",
         subtitle: "SaaS, Cloud & C++ HPC",
-        href: "https://abdelrahmanmahmoud.vercel.app/portfolio/projects",
+        href: "https://website-porto-beta.vercel.app/portfolio/projects",
       },
     ],
     vcard: {
       ...BASE_VCARD,
-      title: "Software Engineer | Intern @ MCIT",
+      title: "Software Engineer | Intern @ Darwish & co",
       note: "Distributed Systems, C++ HPC, TypeScript & Dual AWS Certified",
     },
   },
