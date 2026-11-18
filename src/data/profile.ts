@@ -151,7 +151,7 @@ export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
         id: "portfolio",
         title: "Portfolio & Projects",
         subtitle: "NEXUS-CRM, MediMind & more",
-        href: "https://website-porto-beta.vercel.app/portfolio/projects",
+        href: "https://website-porto-beta.vercel.app/#projects",
       },
     ],
     vcard: {
@@ -200,7 +200,7 @@ export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
         id: "portfolio",
         title: "Backend Case Studies",
         subtitle: "NEXUS-CRM (47+ routes) & MediMind",
-        href: "https://website-porto-beta.vercel.app/portfolio/projects/nexus-crm",
+        href: "https://website-porto-beta.vercel.app/#projects",
       },
     ],
     vcard: {
@@ -249,7 +249,7 @@ export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
         id: "portfolio",
         title: "DevOps Project",
         subtitle: "GitHub Actions & CI/CD",
-        href: "https://github.com/Ahmedadel33/git-cicd",
+        href: "https://github.com/Ahmedadel33/git-github",
       },
     ],
     vcard: {
@@ -347,7 +347,7 @@ export const PROFILE_VARIANTS: Record<ProfileVariantKey, ProfileVariant> = {
         id: "portfolio",
         title: "Systems & Projects",
         subtitle: "SaaS, Cloud & C++ HPC",
-        href: "https://website-porto-beta.vercel.app/portfolio/projects",
+        href: "https://website-porto-beta.vercel.app/#projects",
       },
     ],
     vcard: {
